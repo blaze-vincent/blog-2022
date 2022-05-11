@@ -1,11 +1,13 @@
 import Nav from "./nav";
+import GradientBackground from "./gradientBackground";
 
 export default function Header(){
 
-  return (<header className="px-4 flex flex-col items-start">
-    <h1 className="bg-gradient-to-r from-amber-200 to-orange-400 text-neutral-900 xs:text-3xl sm:text-4xl text-2xl p-4 font-syne rounded-b">
-      nine-orange-ten
-    </h1>
+  return (<header className="pl-4 flex flex-col items-start">
+    <div className="relative text-neutral-900 xs:text-3xl sm:text-4xl text-2xl p-4 w-full">
+      <GradientBackground className='rounded-bl'/>
+      <h1 className="relative font-syne">nine-orange-ten</h1>
+    </div>
     <Nav />
   </header>)
 }
