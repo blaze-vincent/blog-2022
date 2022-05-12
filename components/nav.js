@@ -1,5 +1,4 @@
 import Link from "next/link"
-import { useState } from "react"
 import { useRouter } from "next/router"
 import GradientBackground from "./gradientBackground";
 
@@ -31,7 +30,11 @@ export default function Nav(){
           <Link href={location.uri}>
             <a>{location.name}</a>
           </Link>
-          {location.uri === router.pathname && <div className="h-px w-full relative -top-1"><GradientBackground /></div>}
+          {location.uri === router.pathname && <div 
+            className="h-px w-full relative -top-1 overflow-hidden"
+          >
+            <GradientBackground />
+          </div>}
         </li>
       })}
     </ul>
