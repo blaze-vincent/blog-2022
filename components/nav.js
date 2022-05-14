@@ -1,9 +1,9 @@
-import Link from "next/link"
+import Navlink from "./navlink";
 import { useRouter } from "next/router"
-import GradientBackground from "./gradientBackground";
 
 export default function Nav(){
   const router = useRouter();
+
   const locations = [
     {
       name: 'Home',
@@ -23,19 +23,10 @@ export default function Nav(){
     }
   ]
 
-  return <nav>
+  return <nav className="mb-6 mt-1">
     <ul className="flex flex-row gap-4 xs:text-lg font-jetbrains flex-wrap">
       {locations.map((location, index) => {
-        return <li className="flex flex-col w-max" key={index}>
-          <Link href={location.uri}>
-            <a>{location.name}</a>
-          </Link>
-          {location.uri === router.pathname && <div 
-            className="h-px w-full relative -top-1 overflow-hidden"
-          >
-            <GradientBackground />
-          </div>}
-        </li>
+        return <Navlink key={index} uri={location.uri} name={location.name} routerPathname={router.pathname}/>
       })}
     </ul>
   </nav>
