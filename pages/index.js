@@ -1,5 +1,10 @@
+import AboutSection from "../components/about";
+import ProfileSection from "../components/profile";
+
 export default function Home() {
   return <div className="flex flex-col gap-8 max-w-screen-md text-lg">
+    <ProfileSection />
+    <AboutSection />
     <p> Commodo enim incididunt exercitation incididunt. Velit nostrud et officia esse deserunt ad culpa esse. Adipisicing voluptate fugiat esse cupidatat nisi ullamco sunt officia incididunt consectetur tempor. Duis ipsum ullamco pariatur irure sint sit id veniam minim occaecat irure ut. Culpa laborum laboris officia Lorem quis labore.  Do ut enim </p>
     <p> elit aute. Minim labore sit adipisicing ullamco reprehenderit do sunt esse reprehenderit laboris do laboris aliqua. Magna non ut consequat consectetur esse reprehenderit. Esse labore laborum ad qui adipisicing aute eiusmod ex laborum ut. Nulla commodo esse do eu consectetur anim. Nostrud nulla labore labore cupidatat cupidatat commodo occaecat. Occaecat </p>
     <p> fugiat mollit consectetur Lorem labore aliquip fugiat non commodo excepteur Lorem.  Amet magna ex cillum ex aliquip officia irure. Occaecat in tempor ad sunt laborum pariatur amet dolor amet voluptate. Pariatur commodo culpa eu laboris et sint. Consectetur consequat duis incididunt esse dolor incididunt ex id. Esse eiusmod eu </p>
