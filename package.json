@@ -1,5 +1,5 @@
 {
-  "name": "bv-nextjs-tailwindcss-template",
+  "name": "bv-blog-2022",
   "private": true,
   "scripts": {
     "dev": "next dev",
