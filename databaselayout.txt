@@ -1,0 +1,26 @@
+WEBSITE:
+  images: IMAGE
+  description: string 
+  technologies: MEDIUM
+
+MEDIUM:
+  name: string
+  
+IMAGE:
+  description: string
+  imageUrl: string
+
+~~~~~~~~~~~~~~~~~~~
+
+ARTPIECE:
+  description: string
+  images: IMAGE
+  craft: MEDIUM
+
+~~~~~~~~~~~~~~~~~~~
+
+CODEBLOCK:
+  description: string
+  images: IMAGE
+  technologies: MEDIUM
+  
