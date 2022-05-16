@@ -3,7 +3,6 @@ import { useEffect, useRef } from "react"
 export default function GradientBackground({className}){
   //parent should be positioned relatively and have overflow hidden for intended behavior
   
-  //todo: try moving the left property of the element to 0(left of screen) since its currently relative to parent position
   const thisElement = useRef(null);
   useEffect(_ => {
     thisElement.current.style.left = "" + -thisElement.current.getBoundingClientRect().x + "px"
