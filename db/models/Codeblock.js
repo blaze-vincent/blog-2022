@@ -11,10 +11,13 @@ const CodeblockSchema = new Schema({
   technologies: [{//Medium
     type: Schema.Types.ObjectID
   }],
+  githubRepo: {//GithubRepo
+    type: Schema.Types.ObjectID
+  },
   createdAt: {
     type: Date,
     default: Date.now
-  }
+  },
 })
 
 module.exports = models.Codeblock || model('Codeblock', CodeblockSchema)

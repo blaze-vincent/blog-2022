@@ -11,6 +11,9 @@ const WebsiteSchema = new Schema({
   technologies: [{//Medium
     type: Schema.Types.ObjectID
   }],
+  githubRepo: {
+    type: Schema.Types.ObjectID
+  },
   createdAt: {
     type: Date,
     default: Date.now
