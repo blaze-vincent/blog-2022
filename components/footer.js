@@ -1,5 +1,5 @@
 export default function Footer(){
-  return (<footer className="px-4">
-    footer tag contents
+  return (<footer className="p-4">
+    footer contents
   </footer>)
 }
