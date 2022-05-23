@@ -1,6 +1,5 @@
 import GradientBackground from "../components/gradientBackground";
 import Carousel from "../components/carousel/carousel";
-import Carousel2 from '../components/carousel2/carousel';
 
 export default function Websites(){
 
@@ -11,7 +10,6 @@ export default function Websites(){
         <GradientBackground />
         <h2 className="relative text-lg xs:text-xl sm:text-2xl font-syne text-center">SG Construction Company</h2>
       </div>
-      <div className="w-full flex flex-row h-80">
 
       <Carousel className="overflow-visible" slideObjects={
         [
@@ -26,7 +24,7 @@ export default function Websites(){
           },
         ]
       } />
-      </div>
+
     </div>
   </>
 }
